@@ -5,10 +5,8 @@
 # Import module
 import spacy 
 
-
 # Load language module
 nlp = spacy.load('en_core_web_sm')
-
 
 # Initiate list to store the garden sentences in.
 gardenpathSentence = []
@@ -25,13 +23,11 @@ gardenpathSentence.append(sentence3)
 gardenpathSentence.append(sentence4)
 gardenpathSentence.append(sentence5)
 
-
 # Tokenize the sentences in the list.
 tokenized = [words.split() for words in gardenpathSentence]
 nlp_tokenized = nlp(str(tokenized))
 print()
 print("Tokenized list: ", nlp(str(tokenized)))
-
 
 # Perform entity recognition and display to the screen.
 print()
